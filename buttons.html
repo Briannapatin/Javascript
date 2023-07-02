@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Buttons</title>
+</head>
+
+<body>
+    <h2>Javascript</h2>
+    <p id="demo1">Javascript can change html content</p>
+    <button type="button" onclick="document.getElementById('demo1').innerHTML='Hello Javascript'">Click me!</button>
+    <button type="button" onclick="document.getElementById('demo1').style.fontSize='30px'">Large Fonts</button>
+    <button type="button" onclick="document.getElementById('demo1').style.display='none'">Hide</button>
+    <h2>BULB SWITCH</h2>
+    <button type="button" onclick="document.getElementById('bulb').src='images/pic_bulbon.gif' ">Turn on</button>
+    <img id="bulb" src="./images/pic_bulboff.jpg" alt="bulb" width="100px">
+    <button type="button" onclick="document.getElementById('bulb').src='./images/pic_bulboff.jpg'">Turn off</button>
+    <p id="demo2">This is...</p>
+    <script>
+        document.getElementById('demo2').innerHTML = 'This is my first Javascript';
+    </script>
+    <p id="demo3">Color change from black to green</p>
+    <p id="demo4">Green text with blue border around it</p>
+    <p id="demo5"></p>
+    <button type="button" onclick="document.getElementById('demo3').style.color = '#0f0'">Green</button>
+    <button type="button" onclick="myFunction()" style="background-color: rgba(255, 0, 0, 0.3);">Border</button>
+    <button type="button" onclick="document.write('Everything has been deleted')">Delete All</button><br><br>
+    <button type="button" onclick="window.alert('This is my first Javascript')">Alert</button>
+    <script>
+        console.log(5 + 6);
+    </script>
+    <button onclick="window.print()">Print</button>
+    <p id="demo"></p>
+
+    <script>
+        // let x, y, z;  // Statement 1,declared by 'let' variable, if am to use this code them am to omit the keywords 'let'
+        let x = 5;        // Statement 2,x is the identifier
+        let y = 6;        // Statement 3,y is the identifier
+        let z = x + y;    // Statement 4,'=' and '+' are operators
+
+        document.getElementById("demo").innerHTML =
+            "The value of z is " + z + "." + " <br> (The variable here has been declared using the keyword 'let')";  
+    </script>
+    <p id="demo6"></p>
+    <script>
+        document.getElementById('demo6').innerHTML = (200 / 20) + ', ' + (5 * 2) + ', ' + (5 + 5) + ', ' + (20 - 10); //operators(-,+,/,*,=)
+    </script>
+    <p id="demo7"></p>
+    <script>
+        const a = 5;
+        const b = 10;
+        const c = a * b;
+        document.getElementById("demo7").innerHTML = "Using keyword 'const' to declare variable " + (c + a + b);
+    </script>
+    <p id="demo8"></p>
+    <p id="demo9">This changes when Variable button is pressed.</p>
+    <p id="demo10"></p>
+    <button type="button" onclick="myScript()">Variables</button>
+    <button type="button"
+        onclick="document.getElementById('demo10').innerHTML= person + ' has a ' + carName + ' worth ' + price">Jane
+        Doe</button>
+    <p id="demo11"></p>
+
+    <button><a href="https://www.google.com" style="text-decoration: none;" target="_blank";>Google</a></button>
+    <script src="./myscript.js"></script>
+</body>
+
+</html>
