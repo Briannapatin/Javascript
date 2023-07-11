@@ -22,3 +22,7 @@ const cars =['Benz','Audi','BMW'];
 cars [0] = ['Mercedes Benz & Volkswagon'];
 cars.push ('Dodge.');
 document.getElementById('demo11').innerHTML= cars;
+function time() {
+    const x= new Date();
+    document.getElementById("demo12").innerHTML="The time is " + x;
+}
