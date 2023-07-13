@@ -18,11 +18,27 @@ document.getElementById('demo8').innerHTML = firstName + ' ' + lastName + ' is '
 
 const person = 'Jane Doe', carName = 'Mercedes', price = '$40,000';
 
-const cars =['Benz','Audi','BMW'];
-cars [0] = ['Mercedes Benz & Volkswagon'];
-cars.push ('Dodge.');
-document.getElementById('demo11').innerHTML= cars;
+const cars = ['Benz', 'Audi', 'BMW'];
+cars[0] = ['Mercedes Benz & Volkswagon'];
+cars.push('Dodge.');
+document.getElementById('demo11').innerHTML = cars;
 function time() {
-    const x= new Date();
-    document.getElementById("demo12").innerHTML="The time is " + x;
+    const x = new Date();
+    document.getElementById("demo12").innerHTML = "The date today is " + x.toDateString() + " (Date string)";
+    document.getElementById("demo13").innerHTML = "The date today is " + x.toUTCString() + " (UTC standard)";
+    document.getElementById("demo14").innerHTML = "The date today is " + x.toISOString() + " (ISO standard)";
+}
+
+function myMonth() {
+    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const d = new Date();
+    let month = months[d.getMonth()];
+    document.getElementById("demo15").innerHTML = month;
+}
+
+function myDay() {
+    const days = ["Sunday", "Monday", "Tuesday", "Wenesday", "Thursday", "Friday", "Saturday",];
+    const d = new Date();
+    let day = days[d.getDay()];
+    document.getElementById("demo16").innerHTML = day;
 }
