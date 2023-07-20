@@ -42,3 +42,19 @@ function myDay() {
     let day = days[d.getDay()];
     document.getElementById("demo16").innerHTML = day;
 }
+
+// Function to get tomorrow's date
+function getTomorrowDate() {
+  const d = new Date();
+  d.setDate(d.getDate() + 1);
+  return d;
+}
+
+// Function to display tomorrow's date
+function showTomorrowDate() {
+  const tomorrowDate = getTomorrowDate();
+  const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  const day = days[tomorrowDate.getDay()];
+
+  document.getElementById("demo16").innerHTML = day;
+}
