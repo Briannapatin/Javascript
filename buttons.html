@@ -67,12 +67,31 @@
     <p id="demo14"></p>
     <p id="demo15"></p>
     <p id="demo16"></p>
+    <p id="demo17"></p>
+    <p id="demo18"></p>
     <button><a href="https://www.google.com" style="text-decoration: none;" target="_blank" ;>Google</a></button>
     <button type="button" onclick="time()">Date</button>
     <button type="button" onclick="myMonth()">Month</button>
     <button type="button" onclick="myDay()">Day</button>
     <button type="button" onclick="showTomorrowDate()">Tomorrows Day</button>
-
+    <script>
+        const numbs = [45, 4, 9, 16, 25];
+        let txt = "";
+        for(let i=0; i<numbs.length; i++) {
+        txt += numbs[i] + "<br>" ;
+        }
+        document.getElementById("demo17").innerHTML= txt;
+        </script>
+        <!-- <script>
+            const numbers = [455, 4, 9, 16, 25];
+        let txt = "";
+        let i=0;
+        while(i<numbers.length) {
+            txt += numbers[i] + "<br>" ;
+            i++;
+        }
+        document.getElementById("demo18").innerHTML= txt;
+        </script> -->
     <script src="./myscript.js"></script>
 </body>
 
